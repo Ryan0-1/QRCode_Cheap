@@ -1,0 +1,10 @@
+Flask
+qrcode
+Flask-Mail
+python-dotenv
+Flask-WTF
+Flask-Login
+Flask-CORS
+Pillow
+gunicorn
+requests

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact QRCodeCheap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container py-5">
+  <h1 class="mb-4 text-center">Contact Us</h1>
+
+  {% if success %}
+    <div class="alert alert-success text-center">
+      ✅ Message sent! We’ll get back to you soon.
+    </div>
+  {% endif %}
+
+  <form method="POST" class="mx-auto" style="max-width: 500px;">
+    <div class="mb-3">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="mb-3">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="mb-3">
+      <textarea name="message" class="form-control" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <div style="display: none;">
+        <input type="text" name="middle_name" autocomplete="off">
+      </div>
+    <button type="submit" class="btn btn-dark">Send Message</button>
+  </form>
+</div>
+<footer class="text-center mt-5 text-muted" style="font-size: 0.9rem;">
+    <p>
+      <a href="/contact">Contact</a> &middot; &copy; 2025 QRCodeCheap
+    </p>
+  </footer>
+
+</body>
+</html>
